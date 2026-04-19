@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ${{ secrets.DOCKER_AGNES16 }}/2048-agnes:latest
+  IMAGE_NAME: ${{ secrets.DOCKER_agnes16 }}/2048-agnes:latest
 
 jobs:
   build-push-image:
@@ -27,8 +27,8 @@ jobs:
       - name: Login to Docker Registry
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_AGNES16 }}
-          password: ${{ secrets.DOCKER_TAUFIQTABARAK }}
+          username: ${{ secrets.DOCKER_agnes16 }}
+          password: ${{ secrets.DOCKER_taufiqtabarak }}
 
       - name: Push Image
         run: docker push $IMAGE_NAME
