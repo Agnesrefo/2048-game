@@ -21,7 +21,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.AGNES16 }}
-          password: ${{ secrets.DOCKER_TAUFIQTABARAK }}
+          password: ${{ secrets.DOCKER_CBNFMXUI4PJBHXBYJYYXJG3J4TSCA }}
       - name: Push Image
         run: docker push $IMAGE_NAME
 
